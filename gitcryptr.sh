@@ -2,7 +2,7 @@
 
 #####
 # ./gitcryptr <password> <git-repo-link>
-# Based on https://gist.github.com/shadowhand/873637
+# Inspired by https://gist.github.com/shadowhand/873637
 #####
 
 if [[ $# -ne 2 ]] ; then
@@ -101,6 +101,9 @@ echo "    textconv = `pwd`/.gitcryptr/diff_filter_openssl" >> .git/config
 #####
 # Exclude files to ensure not pushing password or script
 #####
+echo ""
+echo "-- Excluding encryption configuration from git repository"
+echo ""
 echo ".gitcryptr/*" > .git/info/exclude
 echo "gitcryptr.sh" >> .git/info/exclude
 

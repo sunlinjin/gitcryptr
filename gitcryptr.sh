@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 
 #####
+# ./gitcryptr <password> <git-repo-link>
 # Based on https://gist.github.com/shadowhand/873637
 #####
 
 if [[ $# -ne 2 ]] ; then
-    echo "Usage: $0 PASSWORD GIT-URL"
+    echo "Usage: $0 <password> <git-repo-link>"
     exit 0
 fi
 

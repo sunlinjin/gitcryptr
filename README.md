@@ -22,7 +22,6 @@ chmod +x gitcryptr.sh
 * Run once and forget
 
 ## Demo
-[![asciicast](https://asciinema.org/a/136544.png)](https://asciinema.org/a/136544)
-
-
 [GIF demo version](http://i.imgur.com/bKiURmw.gif)
+
+[![asciicast](https://asciinema.org/a/136544.png)](https://asciinema.org/a/136544)

@@ -28,8 +28,8 @@ echo ""
 # Init User configs.
 # Salt is random 12 hex character alphanumeric string (lowercase only).
 #####
-#INIT_SALT=$(cat /dev/urandom | tr -dc 'a-fA-F0-9' | fold -w 12 | head -n 1)
-INIT_SALT='AFdFb9ABD1Fe'
+echo "Starting random salt generation"
+INIT_SALT=$(cat /dev/urandom | tr -dc 'a-fA-F0-9' | fold -w 12 | head -n 1)
 echo "Generated following salt : $INIT_SALT"
 echo ""
 

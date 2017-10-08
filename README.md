@@ -18,9 +18,9 @@ chmod +x gitcryptr.sh
 * Transparent encryption when adding
 * Transparent decryption when pulling or diff
 * AES-256-ECB encryption
-  * AES-256-CBC can be chosen, but it recreates file at each decription, loosing file tracking
+  * AES-256-CBC can be chosen, but it recreates files at each decryption, thus loosing file tracking
 * Excludes encryption configuration files from being pushed
-* Run once and forget
+* **Run once and forget**
 
 ## Demo
 ![Demo](http://i.imgur.com/bKiURmw.gif)

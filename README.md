@@ -1,7 +1,8 @@
 # gitcryptr
 
-#### Automatically encrypt and decrypt commits to git repository
+#### Automatically encrypt and decrypt commits to git repository  
 
+**Git init with automatic file encryption on remote server**
 Hooks git encryption filters to target folder and inits the repository
 
 ## Usage

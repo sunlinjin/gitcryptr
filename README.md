@@ -5,7 +5,7 @@
 Hooks git encryption filters to target folder and inits the repository
 
 ## Usage
-```
+```bash
 cd secretproject
 curl "https://raw.githubusercontent.com/kh4st3x/gitcryptr/master/gitcryptr.sh" > gitcryptr.sh
 chmod +x gitcryptr.sh
@@ -22,6 +22,7 @@ chmod +x gitcryptr.sh
 * Run once and forget
 
 ## Demo
-[GIF demo version](http://i.imgur.com/bKiURmw.gif)
+![Demo](http://i.imgur.com/bKiURmw.gif)
 
+## asciinema
 [![asciicast](https://asciinema.org/a/136544.png)](https://asciinema.org/a/136544)

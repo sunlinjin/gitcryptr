@@ -50,27 +50,27 @@ mkdir ".gitcryptr"; cd ".gitcryptr"
 #####
 # Create clean_filter_openssl file AKA encryption.
 cat << EOF > clean_filter_openssl
-#!/bin/bash
+#!/usr/bin/env bash
 openssl smime -encrypt -aes256 -binary -outform DEM "$PublicKey" 2> /dev/null  || cat
 EOF
 
 #####
 # Create smudge_filter_openssl AKA decryption
 cat << EOF > smudge_filter_openssl
-#!/bin/bash"
+#!/usr/bin/env bash
 
-# If decryption fails, use cat instead."
-# Error messages are redirected to /dev/null."
+# If decryption fails, use cat instead.
+# Error messages are redirected to /dev/null.
 openssl smime -decrypt -binary -inform DEM -inkey "$PrivateKey" 2> /dev/null || cat
 EOF
 
 #####
 # Create diff_filter_openssl
 cat << EOF > diff_filter_openssl
-#!/bin/bash"
+#!/usr/bin/env bash
 
-# If decryption fails, use cat instead."
-# Error messages are redirected to /dev/null."
+# If decryption fails, use cat instead.
+# Error messages are redirected to /dev/null.
 openssl smime -decrypt -binary -inform DEM -inkey "$PrivateKey" -in "\$1" 2> /dev/null || cat "\$1"
 EOF
 )
